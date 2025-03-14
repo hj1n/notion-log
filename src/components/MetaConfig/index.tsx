@@ -2,12 +2,12 @@ import { CONFIG } from "site.config"
 import Head from "next/head"
 
 export type MetaConfigProps = {
-  title: string
-  description: string
-  type: "Website" | "Post" | "Page" | string
-  date?: string
-  image?: string
-  url: string
+  title: any
+  description: any
+  type: "Website" | "Post" | "Page" | any
+  date?: any
+  image?: any
+  url: any
 }
 
 const MetaConfig: React.FC<MetaConfigProps> = (props) => {
