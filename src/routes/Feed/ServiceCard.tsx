@@ -12,7 +12,7 @@ const ServiceCard: React.FC = () => {
         <Emoji>🌟</Emoji> Service
       </StyledTitle>
       <StyledWrapper>
-        {CONFIG.projects.map((project, idx) => (
+        {CONFIG?.projects?.map((project, idx) => (
           <a
             key={idx}
             href={`${project.href}`}
