@@ -4,6 +4,11 @@ import { AiFillCodeSandboxCircle } from "react-icons/ai"
 import styled from "@emotion/styled"
 import { Emoji } from "src/components/Emoji"
 
+interface Project {
+  name: string
+  href: string
+}
+
 const ServiceCard: React.FC = () => {
   if (!CONFIG.projects || CONFIG.projects == null) return null
   return (
@@ -12,7 +17,7 @@ const ServiceCard: React.FC = () => {
         <Emoji>🌟</Emoji> Service
       </StyledTitle>
       <StyledWrapper>
-        {CONFIG?.projects?.map((project, idx) => (
+        {(CONFIG.projects as Project[]).map((project, idx) => (
           <a
             key={idx}
             href={`${project.href}`}

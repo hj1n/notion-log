@@ -10,7 +10,7 @@ const CONFIG = {
     github: process.env.NEXT_PUBLIC_USER_GITHUB,
     instagram: process.env.NEXT_PUBLIC_USER_INSTAGRAM,
   },
-  projects: null,
+  projects: [],
   // [
   //   {
   //     name: `morethan-log`,
